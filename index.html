@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zishang Feng | 冯子上</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Header */
+        .header { text-align: center; margin-bottom: 48px; }
+        .header h1 {
+            font-size: 2.4em;
+            color: #f0f6fc;
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+        .header .subtitle {
+            font-size: 1.1em;
+            color: #8b949e;
+            margin-bottom: 16px;
+        }
+        .header .contact {
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+        .header .contact a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .header .contact a:hover { text-decoration: underline; }
+        .header .contact span { margin: 0 8px; }
+
+        /* Sections */
+        section { margin-bottom: 40px; }
+        section h2 {
+            font-size: 1.4em;
+            color: #f0f6fc;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        /* About */
+        .about p { font-size: 1.05em; color: #c9d1d9; }
+
+        /* Education */
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 8px 0;
+            border-bottom: 1px solid #161b22;
+        }
+        .edu-item:last-child { border-bottom: none; }
+        .edu-school { font-weight: 600; color: #f0f6fc; }
+        .edu-detail { color: #8b949e; font-size: 0.9em; }
+        .edu-highlight { color: #3fb950; font-weight: 600; }
+
+        /* Projects */
+        .project {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: border-color 0.2s;
+        }
+        .project:hover { border-color: #388bfd; }
+        .project h3 { color: #f0f6fc; margin-bottom: 8px; }
+        .project h3 a { color: #58a6ff; text-decoration: none; }
+        .project h3 a:hover { text-decoration: underline; }
+        .project p { color: #8b949e; font-size: 0.95em; margin-bottom: 8px; }
+        .project .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .project .tag {
+            background: #1f2937;
+            color: #58a6ff;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+        }
+
+        /* Awards */
+        .awards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .awards-grid { grid-template-columns: 1fr; } }
+        .awards-category h3 {
+            color: #58a6ff;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .award-item {
+            padding: 6px 0;
+            font-size: 0.95em;
+            border-bottom: 1px solid #161b22;
+        }
+        .award-item:last-child { border-bottom: none; }
+        .award-name { color: #c9d1d9; }
+        .award-result { color: #3fb950; font-weight: 600; }
+        .award-year { color: #8b949e; font-size: 0.85em; }
+
+        /* Skills */
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .skills-grid { grid-template-columns: 1fr; } }
+        .skill-category h3 { color: #58a6ff; font-size: 0.95em; margin-bottom: 6px; }
+        .skill-category p { color: #c9d1d9; font-size: 0.9em; }
+
+        /* Books */
+        .books { display: flex; flex-wrap: wrap; gap: 8px; }
+        .book {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 6px;
+            padding: 6px 14px;
+            font-size: 0.88em;
+            color: #c9d1d9;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #21262d;
+            color: #484f58;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>冯子上 <span style="color:#8b949e; font-size:0.5em;">Zishang Feng</span></h1>
+            <div class="subtitle">CS · Physics · AI — Building things that matter</div>
+            <div class="contact">
+                <a href="mailto:fengzishang2009@126.com">fengzishang2009@126.com</a>
+                <span>|</span>
+                <a href="https://github.com/Alumin-Hydro">GitHub</a>
+                <span>|</span>
+                <span>131-4651-1275</span>
+            </div>
+        </div>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a 16-year-old high school student at the Experimental High School Attached to Beijing Normal University (International Division), ranked <strong style="color:#3fb950;">1st academically</strong> in my grade. I'm passionate about the intersection of computer science, physics, and artificial intelligence — building real systems, not just passing exams. I taught myself university-level mathematics and physics, and I apply that knowledge to AI projects: fine-tuning language models, building autonomous agents, and developing interactive AI systems.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-item">
+                <div>
+                    <div class="edu-school">北京师范大学附属实验中学 · 国际部</div>
+                    <div class="edu-detail">Experimental High School Attached to BNU</div>
+                </div>
+                <div style="text-align:right;">
+                    <div class="edu-highlight">Rank #1</div>
+                    <div class="edu-detail">2025 – 2028</div>
+                </div>
+            </div>
+            <div class="edu-item">
+                <div>
+                    <div class="edu-school">清华大学附属中学上地学校</div>
+                    <div class="edu-detail">Affiliated High School of Tsinghua University, Shangdi</div>
+                </div>
+                <div style="text-align:right;">
+                    <div class="edu-highlight">497 / 510</div>
+                    <div class="edu-detail">2022 – 2025</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>🧠 <a href="https://huggingface.co/Alumin-Hydro/Qwen3.5-9B-Physics">Qwen3.5-9B Physics Fine-tuning</a></h3>
+                <p>LoRA SFT fine-tuning of Qwen3.5-9B on a curated physics dataset using LlamaFactory. Built a complete data pipeline with quality filtering and evaluation. The model specializes in physics reasoning across 25 topics.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">LlamaFactory</span>
+                    <span class="tag">QLoRA</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">HuggingFace</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>🤖 Dual AI Agent System</h3>
+                <p>Two cooperating AI agents with distinct roles: a <strong>Work Agent</strong> with custom harness (persistent memory, skill system, tool orchestration) for engineering tasks, and a <strong>Social Agent</strong> with emoji generation (subagent pipeline), voice I/O (ASR + TTS), and chat-optimized interaction. They collaborate on tasks.</p>
+                <div class="tags">
+                    <span class="tag">Agent Architecture</span>
+                    <span class="tag">TTS</span>
+                    <span class="tag">ASR</span>
+                    <span class="tag">Memory Systems</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>🎙️ AI VTuber / Live Streamer</h3>
+                <p>Built a layered LLM architecture (large + small model collaboration) for low-latency real-time interaction, based on Super-Agent-Party. Integrated TTS and RVC (trained custom voice model) for singing and speech synthesis.</p>
+                <div class="tags">
+                    <span class="tag">LLM Orchestration</span>
+                    <span class="tag">TTS</span>
+                    <span class="tag">RVC</span>
+                    <span class="tag">Real-time Audio</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>🌐 <a href="https://groovin.cn">Groovin.cn</a> — Student Platform</h3>
+                <p>A student-run platform with AI Agent and RAG-powered search engine for articles, posts, and chat. Built with a small dev team at school to replace the bloated official website and make社团 information accessible.</p>
+                <div class="tags">
+                    <span class="tag">Nginx</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">AI Agent</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>🎨 Flux-1.dev Style LoRA</h3>
+                <p>SFT LoRA fine-tuning of Flux-1.dev for style transfer using OneTrainer. A learning exercise in diffusion model adaptation.</p>
+                <div class="tags">
+                    <span class="tag">Diffusion Models</span>
+                    <span class="tag">LoRA</span>
+                    <span class="tag">OneTrainer</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Awards</h2>
+            <div class="awards-grid">
+                <div class="awards-category">
+                    <h3>💻 Competitive Programming</h3>
+                    <div class="award-item">
+                        <span class="award-year">2025–26</span>
+                        <span class="award-name">USACO</span>
+                        <span class="award-result">Platinum Division</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2025</span>
+                        <span class="award-name">NOIP (China Informatics Olympiad)</span>
+                        <span class="award-result">Provincial 1st Prize</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2024</span>
+                        <span class="award-name">NOIP</span>
+                        <span class="award-result">Provincial 1st Prize</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2024</span>
+                        <span class="award-name">CSP-S</span>
+                        <span class="award-result">1st Prize</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2025</span>
+                        <span class="award-name">Tsinghua "大中衔接" Winter Seminar</span>
+                        <span class="award-result">Silver Award</span>
+                    </div>
+                </div>
+                <div class="awards-category">
+                    <h3>🔬 Physics & Math</h3>
+                    <div class="award-item">
+                        <span class="award-year">2026</span>
+                        <span class="award-name">CYPT National (中国青年物理学家学术交流会)</span>
+                        <span class="award-result">Special Award + Champion (Team)</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2025</span>
+                        <span class="award-name">Physics Bowl</span>
+                        <span class="award-result">National Gold</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2025</span>
+                        <span class="award-name">BPhO SPC (British Physics Olympiad)</span>
+                        <span class="award-result">Global Gold</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2025</span>
+                        <span class="award-name">AMC 12</span>
+                        <span class="award-result">Honor Roll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>C++, Python, JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>AI / ML</h3>
+                    <p>PyTorch, HuggingFace, LlamaFactory, LoRA/QLoRA, RAG, Agent frameworks, TTS, RVC</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure</h3>
+                    <p>Nginx, Linux, Git, Docker</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Research</h3>
+                    <p>Paper reading, English technical writing, Claude Code development</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Self-Study Reading List</h2>
+            <div class="books">
+                <span class="book">Introduction to Electrodynamics — Griffiths</span>
+                <span class="book">Halliday's Physics (Vol 1 & 2)</span>
+                <span class="book">Concrete Mathematics — Graham, Knuth</span>
+                <span class="book">Calculus</span>
+                <span class="book">Linear Algebra</span>
+                <span class="book">Probability & Statistics</span>
+                <span class="book">Elementary Number Theory</span>
+                <span class="book">AIME Competition Guide</span>
+            </div>
+        </section>
+
+        <div class="footer">
+            <p>Built with curiosity · Last updated June 2026</p>
+        </div>
+
+    </div>
+</body>
+</html>
